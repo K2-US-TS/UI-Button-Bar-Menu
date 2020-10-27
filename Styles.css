@@ -1,0 +1,99 @@
+<style>
+
+[name~=buttonbar] {
+        white-space: normal !important;
+}
+
+.divButtonBar {
+	height: var(--ButtonBarHeight);
+	width: var(--ButtonBarWidth);
+	background: var(--ButtonBarBackgroundColor);
+	padding: var(--ButtonBarPadding);
+	margin: var(--ButtonBarMargin);
+}
+
+.divButton {
+	float: var(--ButtonBarButtonFloat);
+	cursor:pointer; 
+	width: var(--ButtonBarButtonWidth);
+	height: var(--ButtonBarButtonHeight); 
+	padding: var(--ButtonBarButtonPadding);
+	margin: var(--ButtonBarButtonMargin);
+	text-align: var(--ButtonBarButtonTextAlign);
+	background: var(--ButtonBarButtonBackgroundColor);
+	border-radius: var(--ButtonBarButtonBorderRadius);
+	border: var(--ButtonBarButtonBorder);
+}
+
+.divButton > img {
+	height: var(--ButtonBarButtonImageHeight);
+	width: var(--ButtonBarButtonImageWidth);
+	vertical-align: middle;
+	display: inline;
+	align: center;
+}
+
+.divButton:hover {
+
+	background-color: var(--ButtonBarButtonHoverBackgroundColor);
+	border-radius: var(--ButtonBarButtonBorderRadius);
+	border: var(--ButtonBarButtonHoverBorder);
+}
+
+
+.divButton:hover .buttonText {
+
+	color: var(--ButtonBarButtonHoverFontColor) !important;
+}
+
+.divButton:active {
+
+	background-color: var(--ButtonBarActiveBackgroundColor);
+	border: var(--ButtonBarActiveBorder);
+}
+
+
+.divButton:active .buttonText {
+	color: var(--ButtonBarActiveFontColor, --ButtonBarButtonFontColor) !important;
+}
+
+.divButton_selected {
+
+	background-color: var(--ButtonBarSelectedBackgroundColor);
+	border-radius: var(--ButtonBarButtonBorderRadius);
+	border: var(--ButtonBarSelectedBorder);
+	
+}
+
+
+.divButton_selected .buttonText {
+	color: var(--ButtonBarSelectedFontColor) !important;
+}
+
+.divButton_selected:hover .buttonText {
+	color: var(--ButtonBarSelectedFontColor) !important;
+}
+
+.divButton_selected:hover {
+
+	background-color: var(--ButtonBarSelectedBackgroundColor);
+}
+
+
+.buttonText {
+	font-family: var(--ButtonBarButtonFontFamily, Helvetica);
+	font-size: var(--ButtonBarButtonFontSize);
+	font-weight: var(--ButtonBarButtonFontWeight);
+	color: var(--ButtonBarButtonFontColor) !important;
+	margin: var(--ButtonBarButtonTextMargin);
+	display: var(--ButtonBarButtonTextDisplay);
+}
+
+.separator {
+	float:left;
+	margin: var(--ButtonBarButtonMargin);
+	border-left:1px solid var(--ButtonBarSeparatorColor); 
+	height: var(--ButtonBarSeparatorHeight);
+}
+
+</style>
